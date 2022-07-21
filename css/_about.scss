@@ -1,0 +1,26 @@
+$theme-color:#2ecc71;
+$text-color:#7777;
+$dark-color:#191919c4;
+
+// about section
+.about__area{
+    background-image: url('/img/pexels-ivan-samkov-8508760.jpg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0px;
+
+    .about__content{
+        h2{
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 0.8rem;
+            margin-right: 100px;
+            line-height: 22px;
+        }
+    }
+
+}

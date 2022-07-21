@@ -1,0 +1,88 @@
+$theme-color:#2ecc71;
+$text-color:#7777;
+$dark-color:#191919c4;
+// haeder
+.hero__add{
+    height: 413px !important;
+}
+.hero__dropDown{
+    position: relative;
+    .hero__dropDownMenu{
+        position: absolute;
+        top: 115%;
+        transition: 0.3s ease-in-out;
+        left: 0;
+        background: white;
+        width: 100%;
+        height: 0px;
+        overflow: hidden;
+        z-index: 99;
+    }
+}
+.hero__cate{
+    cursor: pointer;
+    &:hover{
+        background: #32c771;
+    } 
+}
+.Breadcrumb{
+    padding: 5px 0px;
+    background: #f7f8fa;
+    .breadcrumb{
+        margin-bottom: 0px !important;
+        .breadcrumb-item{
+            font-size: 0.8rem;
+            a:hover{
+                color: $theme-color;
+            }
+        }
+    }
+}
+// shop__area
+.shop__area{
+    padding: 50px 0px;
+    .shop__boxSmall{
+        height: 300px !important;
+    }
+    .shop__box{
+        background-position: center;
+        box-shadow: 0 5px 15px -13px black;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 450px;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        &::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #00000014;
+            z-index: -1;
+        }
+        &:hover .shop__text{
+            background: $dark-color;
+            color: white;
+        }
+        .shop__text{
+            background: #dee2e6c2;
+            padding: 15px;
+            border-radius: 8px;
+            color: black;
+            transition: 0.3s ease-in-out;
+            text-transform: uppercase;
+            width: 180px;
+            h2{
+                font-size: 17px;
+            }
+        }
+    }
+}
